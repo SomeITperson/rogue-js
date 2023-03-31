@@ -1,0 +1,26 @@
+* { box-sizing: border-box; margin: 0; padding: 0;}
+body, html { height: 100%; }
+body { background-color: #000000; color: #ffffff; }
+h1 { font-family: "Playfair Display"; font-size: 30px; margin: 0px; text-align: center;}
+.field-box { border: 0px solid #d0d0d0; width: 100%; height: 90vh; display: flex; justify-content: center; margin-top: 3vh; }
+.field { position: relative; width: 1024px; height: 640px; }
+.field .tile { position: absolute; display: block; width: 50px; height: 50px; background-size: 100%; background-image: url(images/tile-.png); z-index: 5; }
+.field .tileW { background-image: url(images/tile-W.png); }
+.field .tileE { background-image: url(images/tile-E.png); }
+.field .attack__img { width: 40px; position: absolute; right: -10px; bottom: 0px;}
+.field .tileP { background-image: url(images/tile-P.png); z-index: 10; }
+.field .tileHP { background-image: url(images/tile-HP.png); z-index: 9; }
+.field .tileSW { background-image: url(images/tile-SW.png); z-index: 9; }
+.field .tileE .health { background: #ff0000; z-index: 11; position: absolute; left: 0px; top: 0px; height: 3px; }
+.field .tileP .health { background: #00ff00; z-index: 11; position: absolute; left: 0px; top: 0px; height: 3px; max-width: 100%; }
+.inventory-box { border: 2px solid #d0d0d0; float: left; }
+.inventory { position: relative; width: 800px; height: 32px; }
+.cl { clear: both; display: block; }
+
+/* .field .tileP::before { content: ''; position: absolute; width: 50px; height: 50px; border-radius: 50%; box-shadow: 0 0 20px #00ff00;} */
+.img {display: flex; flex-direction: row; align-items: center; justify-content: start; height: max-content; font-weight: bold; font-size: 20px; letter-spacing: 1px;}
+.img img {width: 100px; height: 100px;}
+.header {width: 100%; height: 7vh; background: #2a2721;}
+
+/* .field .tile::before { position: absolute; content: "0";}
+.field .tileW::before { position: absolute; content: "1"; font-size: 20px;} */
